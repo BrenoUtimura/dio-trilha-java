@@ -1,18 +1,20 @@
-## Getting Started
+# Testando projeto em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Neste projeto estarei testando e colocando as informações que eu for adiquirindo sobre a linguagem por aqui neste arquivo, e deixarei ele salvo neste repositório do github.
 
-## Folder Structure
+Com isso dito, sobre este projeto estou na parte sobre as variáveis primitivas e mais sobre os operadores na linguagem Java.
 
-The workspace contains two folders by default, where:
+Conteúdos para reforçar:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+    - Casting;
+    - Testar mais sobre Operadores;
+    - Tipos Primitivos e masi sobre seu funcionamento na linguagem Java:
+        - byte;
+        - long;
+        - short;
+        - int;
+        - boolean;
+        - float;
+        - double
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Nisso envolve nestes tópicos para reforçar para eu poder trabalhar melhor com a linguagem.
