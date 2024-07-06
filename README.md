@@ -6,15 +6,15 @@ Com isso dito, sobre este projeto estou na parte sobre as variáveis primitivas 
 
 Conteúdos para reforçar:
 
-    - Casting;
-    - Testar mais sobre Operadores;
-    - Tipos Primitivos e masi sobre seu funcionamento na linguagem Java:
-        - byte;
-        - long;
-        - short;
-        - int;
-        - boolean;
-        - float;
-        - double
+- Casting;
+- Testar mais sobre Operadores;
+- Tipos Primitivos e masi sobre seu funcionamento na linguagem Java:
+  - byte;
+  - long;
+  - short;
+  - int;
+  - boolean;
+  - float;
+  - double
 
 Nisso envolve nestes tópicos para reforçar para eu poder trabalhar melhor com a linguagem.
