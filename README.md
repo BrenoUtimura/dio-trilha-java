@@ -107,3 +107,92 @@ String formatarCep (long cep)
 -------------------------------
 
 ## Java Beans
+
+Uma das maiores dificuldades na programação é escrever algoritmos legíveis a níveis que sejam compreendidos por todo seu time ou por você mesmo no futuro. Para isso a linguagem Java sugere, através de conveções, formas de escrita universal para nossas classes, atributos, métodos e pacotes.
+
+##### Variáveis
+
+Mais cedo já aprendemos algumas regras de declaração de variáveis, mas agora iremos conhecer algumas sugestões de nomenclatura:
+
+- Uma variável deve ser clara, sem abreviações ou definição sem sentido;
+- Uma variável é sempre no singular, **exceto quando se referir a um array ou coleção**.
+- Defina um idioma único para suas variáveis. Se você for declarar variáveis em inglês, defina todas em inglês.
+
+Não recomendado:
+
+```Java
+double salMedio = 1500.23
+String emails = "aluno@escola.com"
+String myName = "JOSEPH"
+```
+
+Recomendado:
+
+```Java
+double salarioMedio = 1500.23;
+String email = "aluno@escola.com";
+String [] emails = {"aluno@escola.com", "professor@email.com"};
+String meuNome = "JOSEPH" 
+```
+
+Os métodos deverão ser nomeados como verbos, através de uma mistura de letras minúsculas e maiúsculas. Em princípio todas as letras que compõem o nome devem ser mantidas em minúsculo, com exceção da primeira letra de cada palavra composta a partir da segunda palavra.
+
+Exemplos sugeridos para nomenclatura de métodos:
+
+```Java
+somar(int n1, int n2){}
+
+abrirConexao(){}
+
+concluirProcessamento(){}
+```
+-----------------------------------------------------------
+
+## Tipos de Variáveis
+
+No Java, existem algumas palavras reservadas para a representação dos tipos de dados básicos que precisam ser manipulados para a construção de programas. Estes tipos de dados são conhecidos como tipos primitivos (Primitive Types).
+
+>:bulb: Os oito tipos primitivos em Java são:
+>int, byte, short, long, float, double, boolean e char - Esses tipos não são considerados objetos, e portanto representam valores brutos. Eles são armazenados diretamente na pilha de memória (Memory Stack).
+
+Tabela de Tipos Primitivos e seus valores:
+
+Tipo | Memória | Valor Minímo | Valor Máximo |
+---- | --------| ------------ | ------------ |
+byte |  1 byte | -128 |         127
+short | 2 byte | -32.768 |      32.767
+int | 4 bytes   | -2.147.483.648 | 2.147.483.647
+long |  8 bytes | -9.223.372.036.854.775.808 |  9.223.372.036.854.775.807
+
+Os tipos primitivos que podem conter partes fracionárias podem ser representados por dois tipos:
+
+Tipo | Memória | Minímo | Máximo | Precisão |
+---- | --------| ------------ | ------------ | -------- |
+float | 4 bytes |  -3,4028E + 38 | 3,4028E + 38 | 6 – 7 dígitos |
+double | 8 bytes | -1,7976E + 308 | 1,7976E + 308 | 15 dígitos |
+
+Apesar de o tipo float ocupar metade da memória consumida do que um tipo double, ele é menos utilizado. Ele sofre de uma limitação que compromete seu uso em determinadas situações: somente mantém uma precisão decimal entre 6 e 7 dígitos.
+
+Atualmente, com os computadores modernos, se tornou desnecessário utilizar os tipos **short** e **byte**, pois não precisamos nos preocupar tanto assim com o espaço de memória reduzido.
+
+Exemplo de código:
+
+```Java
+public class TipoDados {
+    public static void main(String[] args){
+        byte idade = 20;
+        short ano = 2024;
+        int cep = 21070333;
+        long cpf = 98765432109L;
+        float pi = 3.14F;
+        double salario = 1275.33;
+    }
+}
+```
+
+>:memo: Neste exemplo de código vemos que o tipo **long** depois que for digitado o valor deverá colocar a letra **L** na frente do valor como visto no código acima para indicar para o sistema de que o valor que está vindo mesmo é do tipo long, e isso vale também para o tipo **float**, que é necessário colocar o **F** na frente do valor digitado.
+
+------------------------------------------------------------
+
+## Variáveis e Constantes
+
