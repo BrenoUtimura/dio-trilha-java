@@ -110,7 +110,7 @@ String formatarCep (long cep)
 
 Uma das maiores dificuldades na programação é escrever algoritmos legíveis a níveis que sejam compreendidos por todo seu time ou por você mesmo no futuro. Para isso a linguagem Java sugere, através de conveções, formas de escrita universal para nossas classes, atributos, métodos e pacotes.
 
-##### Variáveis
+#### Variáveis
 
 Mais cedo já aprendemos algumas regras de declaração de variáveis, mas agora iremos conhecer algumas sugestões de nomenclatura:
 
@@ -195,4 +195,95 @@ public class TipoDados {
 ------------------------------------------------------------
 
 ## Variáveis e Constantes
+
+Uma variável é uma área de memória, associada a um nome, que pode armazenar valores de um determinado tipo. Um tipo de dado define um conjunto de valores e um conjunto de operações. Java é uma linguagem com rigidez de tipos, diferente de linguagens como JavaScript, onde declarar o tipo da variável não é obrigatório.
+
+No Java utilizamos identificadores que representam uma referência (ponteiro) a um valor em memória, e esta referência pode ser redirecionada a outro valor, sendo portanto esta a causa do nome "variável", pois o valor pode variar.
+
+Já as Constantes são valores armazenados em memória que não podem ser modificados depois de declarados. Em Java, esses valores são representados pela palavra reservada **final**, seguida do tipo.
+
+Por convenção, **Constantes** são sempre escritas em CAIXA ALTA.
+
+Abaixo temos um exemplo explicativo sobre uso de variáveis e constantes:
+
+```Java
+public class ExemploVariavel {
+	public static void main(String[] args) {
+		/*
+		 * esta linha é considerada como declaração de variável iniciamos a existência
+		 * variavel numero com valor 5 regra: tipo + nome + valor
+		 */
+		int numero = 5;
+
+		/*
+		 * na linha abaixo iremos alterar o valor do varíavel para 10 observe que o tipo
+		 * não é mais necessário, pois a variável já foi declarada anteriormente
+		 */
+		numero = 10;
+
+		System.out.print(numero);
+		
+		/*
+		 * ao usar a palavra reservada final, você determina que jamais
+		 * esta variavel poderá obter outro valor;
+		 * logo a linha 25 vai apresentar um erro de compilação
+		 * isso é considerado uma CONSTANTE na linguagem Java
+		 */
+		final double VALOR_DE_PI = 3.14;
+		
+		VALOR_DE_PI=3.15; //Esta linha vai apresentar erro de compilação!
+	}
+}
+```
+-------------------------------------------------------------
+
+## Operadores
+
+Os operadores são aqueles já conhecidos como + (adição), - (subtração), / (divisão), * (multiplicação), == (igual), != (diferente), < (menor), > (maior), <= (menor igual), >= (maior igual).
+
+>:warning: **O operador de adição (+), quando utilizado em variáveis do tipo texto, realizará a "concatenação de textos"**.
+
+#### Unários
+
+Esses opredores são aplicados juntamente com um outro operador aritmético. Eles realizam alguns trabalhos básicos como incrementar, decrementar, inverter valores numéricos e booleanos.
+
+- **(+) Operador unário de valor positivo** - números são positivos sem esse operador explicitamente;
+
+- **(-) Operador unário de valor negativo** - nega um número ou expressão aritmética;
+
+- **(++) Operador unário de incremento de valor** - incrementa o valor em 1 unidade;
+
+- **(--) Operador unário de decremento de valor** - decrementa o valor em 1 unidade;
+
+- **(!) Operador unário lógico de negação** - nega o valor de uma expressão booleana;
+
+
+<img src="images/img4.jpeg">
+
+>:memo: Dessa forma aqui você não estará alterando o número para ser negativo diretamente, como foi visto neste exemplo.
+
+>:memo: Para mudar realmente o tipo do número teria de ser da seguinte forma:
+
+<img src="images/img5.jpg">
+
+------------------------------------------------
+
+<img src="images/img6.jpg">
+
+>:memo: Mas lembrando que se você deseja retornar aquele valor para positivo novamente não seria dessa forma que poderia fazer como visto no resultado da compilação de que o número ainda continuou o mesmo sem alterações.
+------------------------------------------------
+
+
+<img src="images/img7.jpg">
+
+>:memo: A forma correta de tornar ele positivo novamente seria fazendo uma multiplicação para torná-lo positivo novamente como visto neste exemplo acima.
+--------------------------------------------------
+
+
+<img src="images/img8.jpg">
+
+>:memo: Neste exemplo é a única forma de inverter um valor de variável **booleana**, que explicando sobre este caso, a variável booleana é **true** no primeiro momento e depois colocamos ela como não que seria **!** na frente da variavel, que inverte o valor para **false** neste caso.
+--------------------------------------------------
+
+#### Ternário
 
