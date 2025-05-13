@@ -1,6 +1,6 @@
 # Sobre este documento
 
-Neste documento irei colocar por aqui tudo o que eu for vendo e anotando de importante sobre a linguagem Java, e também deixarei anotado em um caderno, para que assim fique mais tranquilo de buscar as informações em ambos os lugares de mais fácil acesso a elas. E talvez eu faça em tópicos separados em vários arquivos de anotação, se caso eu achar melhor!
+Neste documento irei colocar por aqui tudo o que eu for vendo e anotando de importante sobre a linguagem Java
 
 Aproveite o conteúdo!! 😎
 
